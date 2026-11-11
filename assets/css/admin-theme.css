@@ -1,0 +1,559 @@
+/* ============================================================
+   Eng. Mohammed Al-Sawaf — Admin Light Luxurious Theme
+   Shared admin theme loaded by all admin pages
+   ============================================================ */
+
+:root {
+    --primary-navy: #0F2440;
+    --secondary-slate: #FFFFFF;
+    --accent-cyan: #0E7C9B;
+    --accent-light: #E3F4F9;
+    --accent-gold: #C8A15A;
+    --bg-soft: #F3F6FA;
+    --text-primary: #1B2A3B;
+    --text-secondary: #5E7190;
+    --border-soft: #E3EAF2;
+    --success-green: #1E9E6A;
+    --danger-red: #D94848;
+    --warning-orange: #E59B3C;
+    --shadow-sm: 0 2px 10px rgba(15, 36, 64, 0.06);
+    --shadow-md: 0 8px 30px rgba(15, 36, 64, 0.10);
+    --shadow-lg: 0 18px 50px rgba(15, 36, 64, 0.14);
+    --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    background-color: var(--bg-soft);
+    color: var(--text-primary);
+    direction: rtl;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    font-weight: 800;
+    color: var(--primary-navy);
+}
+
+a { text-decoration: none; }
+
+/* ---------- Top Bar ---------- */
+.top-bar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 12px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    min-height: 100vh;
+    background: #ffffff;
+    border-left: 1px solid var(--border-soft);
+}
+
+.sidebar .navbar-brand {
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-navy) 25%, var(--accent-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar .nav-link {
+    color: var(--text-secondary) !important;
+    padding: 12px 16px;
+    margin: 4px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus,
+.sidebar .nav-link.active {
+    background: var(--accent-light);
+    color: var(--accent-cyan) !important;
+}
+
+.sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* ---------- Page header ---------- */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-cyan) 100%);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    box-shadow: var(--shadow-md);
+}
+
+.page-header h1,
+.page-header h6 {
+    color: #ffffff;
+}
+
+/* ---------- Cards ---------- */
+.card-custom {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.card-custom .card-header {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 16px 20px;
+}
+
+.card-custom .card-body {
+    padding: 22px;
+}
+
+/* ---------- Telemetry cards ---------- */
+.telemetry-card {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.telemetry-card:hover {
+    border-color: rgba(14, 124, 155, 0.5);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.telemetry-number {
+    font-size: 2.2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary-navy), var(--accent-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Tables ---------- */
+.table-custom {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-custom th,
+.table-custom td {
+    border: none;
+    padding: 13px 16px;
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.table-custom thead th {
+    background: var(--bg-soft);
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.table-custom .badge {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+}
+
+.table-custom tbody tr {
+    transition: background 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background: var(--accent-light);
+}
+
+/* ---------- Activity table ---------- */
+.activity-table .table th,
+.activity-table .table td {
+    border: none;
+    padding: 12px 16px;
+    vertical-align: middle;
+    color: var(--text-primary);
+}
+
+.activity-table .table .badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-primary,
+.btn-primary-cyan {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-cyan) 100%);
+    color: #ffffff !important;
+    border: none;
+}
+
+.btn-primary-cyan:hover,
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0A1B30 0%, #0A6480 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(14, 124, 155, 0.3);
+    color: #ffffff !important;
+}
+
+.btn-danger {
+    background: var(--danger-red);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #B93B3B;
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: var(--warning-orange);
+    color: #fff;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #C87F2B;
+}
+
+.btn-outline-secondary {
+    border: 1.5px solid var(--border-soft);
+    color: var(--text-secondary);
+}
+
+.btn-outline-secondary:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    background: var(--accent-light);
+}
+
+/* ---------- Action buttons ---------- */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    font-size: 0.85rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-soft);
+    background: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Forms ---------- */
+.form-control-custom,
+.form-select-custom {
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-soft);
+    color: var(--text-primary);
+    border-radius: 12px;
+    padding: 11px 15px;
+    transition: all 0.25s ease;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+    background-color: #ffffff;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 4px rgba(14, 124, 155, 0.12);
+    color: var(--text-primary);
+}
+
+.input-group-text {
+    background-color: var(--bg-soft);
+    border: 1.5px solid var(--border-soft);
+    color: var(--text-primary);
+    border-radius: 12px;
+}
+
+.w-100 { width: 100%; }
+
+/* ---------- Badges ---------- */
+.badge-unread {
+    background: var(--danger-red);
+    color: #ffffff;
+}
+
+.badge-read {
+    background: var(--success-green);
+    color: #ffffff;
+}
+
+.service-status-badge {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.service-status-available {
+    background: rgba(30, 158, 106, 0.14);
+    color: var(--success-green);
+}
+
+.service-status-busy {
+    background: rgba(229, 155, 60, 0.16);
+    color: var(--warning-orange);
+}
+
+.service-status-completed {
+    background: rgba(217, 72, 72, 0.13);
+    color: var(--danger-red);
+}
+
+/* ---------- Profile ---------- */
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-navy), var(--accent-cyan));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin: 0 auto;
+    box-shadow: var(--shadow-md);
+}
+
+.info-label {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.info-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.project-thumb,
+.img-thumbnail {
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+/* ---------- Modal ---------- */
+.modal-content {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-content .form-control-custom,
+.modal-content .form-select-custom {
+    background-color: #ffffff;
+    border: 1.5px solid var(--border-soft);
+    color: var(--text-primary);
+}
+
+.modal-content .form-control-custom:focus,
+.modal-content .form-select-custom:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 4px rgba(14, 124, 155, 0.12);
+}
+
+/* ---------- Alerts ---------- */
+.alert-custom {
+    background: var(--accent-light);
+    border: 1px solid rgba(14, 124, 155, 0.25);
+    color: var(--accent-cyan);
+    border-radius: 12px;
+}
+
+/* ---------- Utility ---------- */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-secondary);
+}
+
+.text-primary-cyan {
+    color: var(--accent-cyan) !important;
+}
+
+.border-secondary-subtle,
+.dropdown-divider {
+    border-color: var(--border-soft) !important;
+}
+
+.max-width-max {
+    max-width: 100%;
+}
+
+/* ---------- Horizontal Admin Navbar ---------- */
+.admin-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 12px 0;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    direction: rtl;
+}
+
+.admin-navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 1.05rem;
+    background: linear-gradient(135deg, var(--primary-navy) 25%, var(--accent-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.admin-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+    background: var(--accent-light);
+    color: var(--accent-cyan) !important;
+}
+
+.user-chip {
+    background: var(--bg-soft);
+    color: var(--text-secondary);
+    font-weight: 700;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+}
+
+.btn-danger-custom {
+    background: var(--danger-red);
+    color: #ffffff !important;
+    border-radius: 999px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+.btn-danger-custom:hover {
+    background: #B93B3B;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(217, 72, 72, 0.3);
+    color: #ffffff !important;
+}
+
+/* ---------- Service / Project cards ---------- */
+.service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-light);
+    color: var(--accent-cyan);
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.service-card,
+.project-card {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover,
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.tech-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tech-chips .chip {
+    background: var(--bg-soft);
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.project-card-img {
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-navy), var(--accent-cyan));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2.4rem;
+}
+
+.project-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card-img .category-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--primary-navy);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

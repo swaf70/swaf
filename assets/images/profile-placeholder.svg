@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2440"/>
+      <stop offset="1" stop-color="#0E7C9B"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <circle cx="150" cy="150" r="58" fill="#FFFFFF" fill-opacity="0.92"/>
+  <circle cx="150" cy="132" r="26" fill="#0F2440"/>
+  <path d="M150 210c-40 0-58 22-62 46h124c-4-24-22-46-62-46z" fill="#0F2440"/>
+  <text x="150" y="330" text-anchor="middle" font-family="Tajawal, Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">م. محمد الصواف</text>
+  <text x="150" y="360" text-anchor="middle" font-family="Tajawal, Arial, sans-serif" font-size="14" fill="#C8E7F1">مهندس شبكات وأمن معلومات</text>
+</svg>
